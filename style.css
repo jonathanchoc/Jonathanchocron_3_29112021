@@ -1,0 +1,52 @@
+* { 
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+img { 
+ max-width: 100%;
+}
+body { 
+background-color: yellow; }
+
+@media all and (min-width: 513px) { 
+    body { 
+    background-color: green;
+    } 
+}
+@media all and (min-width: 768px) { 
+    body { 
+    background-color: blue;
+    } 
+}
+@media all and (min-width: 992px) { 
+    body { 
+    background-color: black;
+    } 
+}
+@media all and (min-width: 1200px) { 
+    body { 
+    background-color: red;
+    } 
+}
+.header { 
+    padding: 15px 0 8px 0px;
+    text-align: center;
+}
+.section-restaurants .restaurant_image img { 
+        width: 100%;
+        border-radius: 14px 14px 0px 0px;
+        object-fit: cover;
+}
+.button { 
+        border-radius: 20px;
+        border: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+.button_explorer { 
+        text-align: center;
+}   
+
