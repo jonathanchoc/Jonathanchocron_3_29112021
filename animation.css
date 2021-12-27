@@ -1,0 +1,32 @@
+@keyframes container { 
+  0% { 
+    transform: scale(0)
+  }
+  100% {
+    transform:scale(1.0);
+  }
+}
+
+@keyframes spinners { 
+  100% { 
+    opacity:0;
+    z-index: -10;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes jump { 
+   0% { 
+     transform: translateY(0);
+   }
+  25% { 
+     transform: translateY(20px);
+   }
+  75% { 
+     transform: translateY(-20px);
+   }
+ 100% { 
+     transform: translateY(0);
+   }
+}

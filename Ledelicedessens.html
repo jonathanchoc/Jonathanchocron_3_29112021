@@ -4,220 +4,214 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="menu.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="animation.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
 	<title>OHMYFOOD</title>
 </head>
 
 <body>
-	<div id="home">
+	
 
 	<header class="header_food">
 		<div class="header_food_return">
 			<a href="index.html">
 				<i class="fas fa-arrow-left"></i></a>
+				<h1 class="header_logo">ohmyfood</h1>
 		</div>
-		<h1 class="header_food_title">
-			<a href="#">ohmyfood></a>
-		</h1>
+		
 	</header>
 
 	<div class="subheader">
-		<img class="subheader_image" src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-		alt="image Le délice des sens">
+		<img  src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+		alt class="menu_image">
 	</div>
 
-	<div class="container">
-		<main class="main_food">
-			<div class="main_food_container">
-				<h1 class="main_food_container_title">Le délice des sens</h1>
-				<span class="main_food_container_heart" id="heart_icon">
-					<i class="far fa-heart" aria-hidden="true"></i>
-					<i class="fas fa-heart fa-heart-animated"></i>
-				</span>
-			</div>
+					<main class="main_food">
+			<header class="main_food_header">
+				<h2 class="main_food_title">Le délice des sens</h2>
+				<button class="card_button menu_button">
+					<i class="card_like far fa-heart like_menu" aria-hidden="true"></i>
+				</button>
+			</header>
 
-			<section class="box">
+			<div class="menus">
 
-				<div class="box_menu">
-					<h4 class="box_menu_title">ENTRÉES</h4>
+				<section class="menu">
+					<h3 class="menu_title">ENTRÉES</h3>
 
-					<div class="box_container">
-					   <div class="box_container_left">
-					   	<h5 class="box_container_title">Tartare de thon</h5>
-					   	<div class="box_container_inline">
-					   		<p class="box_container_inline_subtitle">Assaisonné au yuzu</p>
-					   		<p class="box_container_inline_price"><strong>25€</strong></p>
-					   	</div>
-                       </div>
-                       <div class="box_container_right">
-                       	  <span class="box_check_icon">
-                       	  	<i class="far fa-check-circle"></i>
-                       	  </span>
-                       </div>
-                    </div>
+					<section class="menu_container delay-0">
+					 <header class="menu_container_header">
+					   <h4 class="menu_container_title">Tartare de thon</h4>
+					   <p class="menu_container_description">Assaisonné au yuzu</p>
+					 </header>
+					  <div class="menu_container_price"><strong>25€</strong></div>
+					 <div class="menu_container_confirmation">
+					   <div class="menu_container_validation_icon">
+					   	<i class="fas fa-check menu_item_icon" aria-hidden="true">
+					   	</i>
+					   </div>
+					 </div>
+					</section>
 
-                    <div class="box_container">
-					   <div class="box_container_left">
-					   	<h5 class="box_container_title">Bouchée de homard croustillant</h5>
-					   	<div class="box_container_inline">
-					   		<p class="box_container_inline_subtitle">Et sa farandole de petits légumes</p>
-					   		<p class="box_container_inline_price"><strong>35€</strong></p>
-					   	</div>
-                       </div>
-                       <div class="box_container_right">
-                       	  <span class="box_check_icon">
-                       	  	<i class="far fa-check-circle"></i>
-                       	  </span>
-                       </div>
-                    </div>
-                       	  	
-                    <div class="box_container">
-					   <div class="box_container_left">
-					   	<h5 class="box_container_title">Velouté de cèpes</h5>
-					   	<div class="box_container_inline">
-					   		<p class="box_container_inline_subtitle">Aux truffes</p>
-					   		<p class="box_container_inline_price"><strong>20€</strong></p>
-					   	</div>
-                       </div>
-                       <div class="box_container_right">
-                       	  <span class="box_check_icon">
-                       	  	<i class="far fa-check-circle"></i>
-                       	  </span>
-                       </div>
-                    </div>
-                    </div>
 
-                  <div class="box_menu">
-					<h4 class="box_menu_title">PLATS</h4>
+					<section class="menu_container delay-1">
+					 <header class="menu_container_header">
+					   <h4 class="menu_container_title">Bouchée de homard croustillant</h4>
+					   <p class="menu_container_description">Et sa farandole de petits légumes</p>
+					 </header>
+					  <div class="menu_container_price"><strong>35€</strong></div>
+					 <div class="menu_container_confirmation">
+					   <div class="menu_container_validation_icon">
+					   	<i class="fas fa-check menu_item_icon" aria-hidden="true">
+					   	</i>
+					   </div>
+					 </div>
+					</section>
 
-					<div class="box_container">
-					   <div class="box_container_left">
-					   	<h5 class="box_container_title">Poulet rôti aux herbes de Provence</h5>
-					   	<div class="box_container_inline">
-					   		<p class="box_container_inline_subtitle">Et sa crème de truffe</p>
-					   		<p class="box_container_inline_price"><strong>40€</strong></p>
-					   	</div>
-                       </div>
-                       <div class="box_container_right">
-                       	  <span class="box_check_icon">
-                       	  	<i class="far fa-check-circle"></i>
-                       	  </span>
-                       </div>
-                    </div>
+					<section class="menu_container delay-2">
+					 <header class="menu_container_header">
+					   <h4 class="menu_container_title">Velouté de cèpes</h4>
+					   <p class="menu_container_description">Aux truffes</p>
+					 </header>
+					  <div class="menu_container_price"><strong>20€</strong></div>
+					 <div class="menu_container_confirmation">
+					   <div class="menu_container_validation_icon">
+					   	<i class="fas fa-check menu_item_icon" aria-hidden="true">
+					   	</i>
+					   </div>
+					 </div>
+					</section>
+                </section>
 
-                    <div class="box_container">
-					   <div class="box_container_left">
-					   	<h5 class="box_container_title">Langouste rôtie</h5>
-					   	<div class="box_container_inline">
-					   		<p class="box_container_inline_subtitle">Et ses légumes de saison</p>
-					   		<p class="box_container_inline_price"><strong>35€</strong></p>
-					   	</div>
-                       </div>
-                       <div class="box_container_right">
-                       	  <span class="box_check_icon">
-                       	  	<i class="far fa-check-circle"></i>
-                       	  </span>
-                       </div>
-                    </div>
+                <section class="menu">
+					<h3 class="menu_title">PLATS</h3>
 
-                    <div class="box_container">
-					   <div class="box_container_left">
-					   	<h5 class="box_container_title">Côte de boeuf Angus </h5>
-					   	<div class="box_container_inline">
-					   		<p class="box_container_inline_subtitle">Et sa purée de panais</p>
-					   		<p class="box_container_inline_price"><strong>44€</strong></p>
-					   	</div>
-                       </div>
-                       <div class="box_container_right">
-                       	  <span class="box_check_icon">
-                       	  	<i class="far fa-check-circle"></i>
-                       	  </span>
-                       </div>
-                    </div>
-                  </div>  
+					<section class="menu_container delay-3">
+					 <header class="menu_container_header">
+					   <h4 class="menu_container_title">Poulet rôti aux herbes de Provence</h4>
+					   <p class="menu_container_description">Et sa crème de truffe</p>
+					 </header>
+					  <div class="menu_container_price"><strong>40€</strong></div>
+					 <div class="menu_container_confirmation">
+					   <div class="menu_container_validation_icon">
+					   	<i class="fas fa-check menu_item_icon" aria-hidden="true">
+					   	</i>
+					   </div>
+					 </div>
+					</section>
 
-                    <div class="box_menu">
-					<h4 class="box_menu_title">DESSERTS</h4>
 
-					<div class="box_container">
-					   <div class="box_container_left">
-					   	<h5 class="box_container_title">Farandole de desserts</h5>
-					   	<div class="box_container_inline">
-					   		<p class="box_container_inline_subtitle">Du chef</p>
-					   		<p class="box_container_inline_price"><strong>18€</strong></p>
-					   	</div>
-                       </div>
-                       <div class="box_container_right">
-                       	  <span class="box_check_icon">
-                       	  	<i class="far fa-check-circle"></i>
-                       	  </span>
-                       </div>
-                    </div>
+					<section class="menu_container delay-4">
+					 <header class="menu_container_header">
+					   <h4 class="menu_container_title">Langouste rôtie</h4>
+					   <p class="menu_container_description">Et ses légumes de saison</p>
+					 </header>
+					  <div class="menu_container_price"><strong>35€</strong></div>
+					 <div class="menu_container_confirmation">
+					   <div class="menu_container_validation_icon">
+					   	<i class="fas fa-check menu_item_icon" aria-hidden="true">
+					   	</i>
+					   </div>
+					 </div>
+					</section>
 
-                    <div class="box_container">
-					   <div class="box_container_left">
-					   	<h5 class="box_container_title">Crème brulée</h5>
-					   	<div class="box_container_inline">
-					   		<p class="box_container_inline_subtitle">Revisitée</p>
-					   		<p class="box_container_inline_price"><strong>22€</strong></p>
-					   	</div>
-                       </div>
-                       <div class="box_container_right">
-                       	  <span class="box_check_icon">
-                       	  	<i class="far fa-check-circle"></i>
-                       	  </span>
-                       </div>
-                    </div>
+					<section class="menu_container delay-5">
+					 <header class="menu_container_header">
+					   <h4 class="menu_container_title">Côte de boeuf Angus</h4>
+					   <p class="menu_container_description">Et sa purée de panais</p>
+					 </header>
+					  <div class="menu_container_price"><strong>44€</strong></div>
+					 <div class="menu_container_confirmation">
+					   <div class="menu_container_validation_icon">
+					   	<i class="fas fa-check menu_item_icon" aria-hidden="true">
+					   	</i>
+					   </div>
+					 </div>
+					</section>
+                </section>
 
-                    <div class="box_container">
-					   <div class="box_container_left">
-					   	<h5 class="box_container_title">Tiramisu</h5>
-					   	<div class="box_container_inline">
-					   		<p class="box_container_inline_subtitle">À la noisette</p>
-					   		<p class="box_container_inline_price"><strong>23€</strong></p>
-					   	</div>
-                       </div>
-                       <div class="box_container_right">
-                       	  <span class="box_check_icon">
-                       	  	<i class="far fa-check-circle"></i>
-                       	  </span>
-                       </div>
-                    </div>
-                </div>
-            </section>
+                <section class="menu">
+					<h3 class="menu_title">DESSERTS</h3>
 
-            <button class="button">
-            	<span class="button_commande">Commander</span>
-            </button>
+					<section class="menu_container delay-6">
+					 <header class="menu_container_header">
+					   <h4 class="menu_container_title">Farandole de desserts</h4>
+					   <p class="menu_container_description">Du chef</p>
+					 </header>
+					  <div class="menu_container_price"><strong>18€</strong></div>
+					 <div class="menu_container_confirmation">
+					   <div class="menu_container_validation_icon">
+					   	<i class="fas fa-check menu_item_icon" aria-hidden="true">
+					   	</i>
+					   </div>
+					 </div>
+					</section>
+
+
+					<section class="menu_container delay-7">
+					 <header class="menu_container_header">
+					   <h4 class="menu_container_title">Crème brulée</h4>
+					   <p class="menu_container_description">Revisitée</p>
+					 </header>
+					  <div class="menu_container_price"><strong>22€</strong></div>
+					 <div class="menu_container_confirmation">
+					   <div class="menu_container_validation_icon">
+					   	<i class="fas fa-check menu_item_icon" aria-hidden="true">
+					   	</i>
+					   </div>
+					 </div>
+					</section>
+
+					<section class="menu_container delay-8">
+					 <header class="menu_container_header">
+					   <h4 class="menu_container_title">Tiramisu</h4>
+					   <p class="menu_container_description">À la noisette</p>
+					 </header>
+					  <div class="menu_container_price"><strong>23€</strong></div>
+					 <div class="menu_container_confirmation">
+					   <div class="menu_container_validation_icon">
+					   	<i class="fas fa-check menu_item_icon" aria-hidden="true">
+					   	</i>
+					   </div>
+					 </div>
+					</section>
+         </section>     
+                      
+       </div> 
+
+            <div class="button">
+            	<button class="button_commande">Commander</button>
+            </div>
 
         </main>
 
-    </div>
-
-    <footer class="footer">
-    	<a class="footer_title" href="#">ohmyfood</a>
-
-    	<div class="footer_container">
-    		<div class="footer_container_subtitle">
-    			<i class="fas fa-utensils"></i>
-    			<a class="footer_container_link" href="#">Proposer un restaurant</a>
-    		</div>
-
-    		<div class="footer_container_subtitle">
-    			<i class="fas fa-hands-helping icon"></i>
-    			<a class="footer_container_link" href="#">Devenir partenaire/a>
-    		</div>
-
-    		<div class="footer_container_subtitle">
-    			<a class="footer_container_link" href="#">Mentions légales</a>
-    		</div>
-
-    		<div class="footer_container_subtitle">
-    			<a class="footer_container_link" href="mailto:email@example.com">Contact</a>
-    		</div>
-    	</div>
-
-    </footer>
+   <footer class="footer">
+      <div class="footer_container">
+         <span class="footer_titre">ohmyfood</span>
+  
+        <div class="footer_container_subtitle">
+          <i class="fas fa-utensils"></i>
+          <a class="footer_container_link" href="#">Proposer un restaunt</a>
+        </div>
+  
+        <div class="footer_container_subtitle">
+          <i class="fas fa-hands-helping icon"></i>
+          <a class="footer_container_link" href="#">Devenir Partenaire</a>
+        </div>
+  
+        <div class="footer_container_subtitle">
+          <a class="footer_container_link" href="#">Mentions légales</a>
+        </div>
+  
+        <div class="footer_container_subtitle">
+          <a class="footer_container_link" href="mailto:contact@ohmyfood.com">Contact</a>
+        </div>
+      </div>
+  </footer>
 
 </div>
 </body>

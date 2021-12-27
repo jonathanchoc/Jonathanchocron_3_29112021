@@ -1,0 +1,234 @@
+* { 
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+img { 
+   max-width: 100%;
+}
+body,html { 
+   font-family: Roboto,sans-serif;
+   margin: 0;
+}
+
+.header_food { 
+   position: relative; 
+   
+}
+.header_food_return i { 
+   color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   width: 32px;
+   height: 32px;
+   left: 28px;
+   top:4px;
+   font-size: 17px;
+}
+ .header_logo { 
+    text-align: center;
+    font-family: Shrikhand,"cursive";
+    margin: 0;
+}
+
+.menu_image { 
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 512px;   
+ }
+.main_food { 
+    border-radius:32px 32px 0 0;
+    z-index: 1;
+    position: relative;
+    margin-top: -26px;
+    background-color: #f5f5f5; 
+}
+.main_food_header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px 0 16px; 
+}
+.main_food_title { 
+    font-family: Shrikhand,"cursive";
+    margin-left: 2%;
+    font-size: 28PX;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.menus { 
+    display: grid;
+}
+.menu { 
+    max-width: 100%;
+    padding: 0 16px;
+    overflow: hidden;
+}
+.menu_title { 
+    position: relative;
+    font-weight: 400;
+    padding-bottom: 4px; 
+    margin-top: 15px;
+}
+.menu_title:after { 
+    content: "";
+    background-color: #99e2d0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 48px;
+    height: 4px; 
+}
+h3 { 
+    display: block;
+    font-size: 17px;
+    margin-top: 20px; 
+}
+h4 { 
+    display: block;
+    font-weight: 500;
+    font-size: 19px; 
+}
+p { 
+    display: block; 
+}
+.menu_container { 
+    display: flex;
+    border-radius: 16px;
+    margin: 16px 0;
+    background-color: #fff;
+    max-width: 100%;
+    padding: 12px;
+    box-shadow: 4px 4px 16px rgb(0 0 0 / 15%);
+    overflow: hidden;
+    cursor: pointer;
+    animation: container .5s;
+    animation-timing-function: cubic-bezier(.5,1.54,.37,.89);
+    animation-fill-mode: both;
+    transform: scale(0);
+}
+.menu_container_header, .menu_container_title { 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+     
+}
+.menu_container_description { 
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.menu_container_header { 
+    flex: 1; 
+}
+.menu_container_title { 
+    margin: 0; 
+}
+.menu_container_confirmation { 
+    margin: -16px -80px -16px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .5s;
+    width: 64px;
+    background-color: #99e2d0; 
+}
+.menu_container_validation_icon { 
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+    transition-duration: .5s;
+}
+.menu_container:hover .menu_container_confirmation { 
+    margin-right: -16px;
+}
+.menu_container:hover .menu_container_validation_icon { 
+    transform: rotate(0); 
+}
+.menu_item_icon { 
+    color: #99e2d0; 
+}
+.menu_container_price { 
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-weight: bold;
+    padding-left: 8px;
+}
+.button { 
+    display: flex;
+    justify-content: center;
+    padding: 48PX 0;
+    text-decoration: none;
+    
+}
+.button_commande { 
+    font-size: 22px;
+    border-radius: 100px;
+    border: 0;
+    padding:16px 24px;
+    color:#fff;
+    background-color: #787575;
+    background-image: linear-gradient(0deg,rgb(147, 86, 220),rgb(255, 121, 218));
+    transition-duration: .20s; 
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 20%); 
+}
+.button_commande:hover { 
+    background-color: #fff;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 60%);
+}
+.delay-0 { 
+    animation-delay: 0s;
+}
+.delay-1 { 
+    animation-delay: .1s;
+}
+.delay-2 { 
+    animation-delay: .2s;
+}
+.delay-3 { 
+    animation-delay: .3s;
+}
+.delay-4 { 
+    animation-delay: .4s;
+}
+.delay-5 { 
+    animation-delay: .5s;
+}
+.delay-6 { 
+    animation-delay: .6s;
+}
+.delay-7 { 
+    animation-delay: .7s;
+}
+.delay-8 { 
+    animation-delay: .8s;
+}
+.menus { 
+    display: grid; 
+}
+
+ @media all and (min-width: 992px) { 
+    .menus { 
+     grid-template-columns: repeat(3, 1fr);
+     column-gap: 16px;
+     }
+}
+@media all and (min-width: 1200px) { 
+    .main_food { 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+      }
+}
+ 
