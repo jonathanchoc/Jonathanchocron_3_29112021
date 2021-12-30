@@ -146,6 +146,7 @@ p {
     justify-content: center;
     height: 24px;
     width: 24px;
+    transform: rotate(180deg);
     transition-duration: .5s;
 }
 .menu_container:hover .menu_container_confirmation { 

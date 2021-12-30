@@ -121,6 +121,9 @@ ol {
     display: flex;
     position: relative;
 }
+.fonction_part:hover { 
+    background-color: rgba(147, 86, 220, 0.3);
+}
 .fonction_part:before {
     counter-increment: compteListe 1;
     content: counter(compteListe)" ";
